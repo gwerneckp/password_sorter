@@ -14,7 +14,7 @@ def strToImage(str, output):
     width = (len(str) * WIDTH_PER_CHAR)
     img = Image.new('RGB', (width, 130), color=(255,255,255))
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype('Gidole-Regular.ttf', size=FONT_SIZE)
+    font = ImageFont.truetype('arial.ttf', size=FONT_SIZE)
     draw.text((PADDING, PADDING), str, fill=TEXT_COLOR, font=font)
     img.save(output)
 
